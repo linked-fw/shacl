@@ -1,0 +1,80 @@
+{
+  "name": "@_linked/shacl",
+  "displayName": "Shapes Constraint Language (SHACL)",
+  "license": "MIT AND W3C-20150513",
+  "files": [
+    "lib",
+    "CHANGELOG.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "version": "0.0.0",
+  "type": "module",
+  "packageManager": "npm@12.2.0",
+  "linked": {
+    "kind": "ontology"
+  },
+  "linkedOntologies": {
+    "shacl": {
+      "namespace": "http://www.w3.org/ns/shacl#",
+      "data": [
+        "shacl.ttl",
+        "shacl-added.ttl"
+      ]
+    }
+  },
+  "author": {
+    "name": "René Verheij",
+    "url": "https://github.com/flyon",
+    "email": "rpwverheij@gmail.com"
+  },
+  "main": "lib/esm/index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "start": "npm exec linked dev",
+    "build": "linked build",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "@_linked/core": "^2.48.0"
+  },
+  "devDependencies": {
+    "@_linked/cli": "^1.57.0",
+    "@changesets/changelog-github": "^1.0.0",
+    "@changesets/cli": "^3.0.0",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "typescript": "^5.7.3",
+    "typescript-plugin-css-modules": "^5.1.0"
+  },
+  "module": "lib/esm/index.js",
+  "exports": {
+    ".": {
+      "types": "./lib/esm/index.d.ts",
+      "import": "./lib/esm/index.js"
+    },
+    "./*.js": {
+      "types": "./lib/esm/*.d.ts",
+      "import": "./lib/esm/*.js"
+    },
+    "./*": {
+      "types": "./lib/esm/*.d.ts",
+      "import": "./lib/esm/*.js"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "lib/esm/*"
+      ]
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linked-fw/shacl.git"
+  }
+}

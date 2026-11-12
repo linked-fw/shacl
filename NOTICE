@@ -1,0 +1,8 @@
+@_linked/shacl
+
+The code in this package is licensed under the MIT License (see LICENSE).
+
+The MIT License does not cover the bundled ontology data. That data is the W3C Shapes Constraint Language (SHACL) vocabulary (https://www.w3.org/ns/shacl.ttl) and remains under its own license:
+
+W3C Software and Document License
+https://www.w3.org/copyright/software-license-2023/
