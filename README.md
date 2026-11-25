@@ -14,7 +14,7 @@ sh.targetClass; // {id: 'http://www.w3.org/ns/shacl#targetClass'}
 ```
 
 `ontologies/shacl` has one named export per term the vocabulary declares, each an `{id}` with the
-term's full IRI. `ontologies/shacl.register` registers the ontology with its data; the package
+term's full IRI. `ontologies/index` registers the ontology with its data; the package
 entry imports it. `@_linked/core` keeps the SHACL terms it builds shapes with
 (`@_linked/core/ontologies/shacl`); this package is the full vocabulary, for an app or a store
 that needs all of it. `linked generate-ontology` writes the modules from the data
