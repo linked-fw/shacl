@@ -1,2 +1,2 @@
 import './types.js';
-import './ontologies/shacl.register.js';
+import './ontologies/index.js';
